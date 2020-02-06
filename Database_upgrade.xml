@@ -2,6 +2,8 @@ A step-by-step Guide to Postgres Database Upgrade(Postgres 9.5 to Postgres 10.0)
 
 1.Make a backup of the exiting database(s). Make sure that your database is not being updated 
 >pg_dumpall > existing_databases.*(sql, tar, zip)
+(the dump is for purposes of fallback plan in case anything goes wrong during the process of the upgrade---not 
+used anywhere in the upgrade processes)
 
 2.Install Postgres 10 (https://wwww.postgresql.org/download/linux/ubuntu/)
 >Then run sudo apt-get install postgresql-10. a newer version will be installed side by side with the earlier version.
